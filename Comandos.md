@@ -78,7 +78,7 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 ---
 
-<span style="color:c9141b">some *blue* text <span>
+
 
 
 
