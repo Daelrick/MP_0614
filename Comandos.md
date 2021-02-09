@@ -16,7 +16,7 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 3. Buscamos el directorio **Windows PowerShell** y lo desplegamos 
 
-![Windows PowerShell](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\y6OUiCrDA0.jpg)
+![Windows PowerShell](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/y6OUiCrDA0.jpg?raw=true)
 
 
 4. Pulsamos botón derecho del ratón sobre **Windows PowerShell** y seleccionamos la opción **Ejecutar como administrador**
@@ -81,7 +81,7 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 
 
-   ![prueba](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\JfOgWPMsL7.jpg)
+
 
 
 
