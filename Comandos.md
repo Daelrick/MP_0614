@@ -81,7 +81,7 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 
 
-   
+   ![](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\JfOgWPMsL7.jpg)
 
 
 
