@@ -52,8 +52,7 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
    
     
 
-
-   Si no hubiera conexión a internet, obtendríamos la siguiente respuesta
+3. Si no hubiera conexión a internet, obtendríamos la siguiente respuesta
 
    ![Respuesta sin Internet](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/ksi3SF0nW4.jpg?raw=true)
 
@@ -78,6 +77,8 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 ##   ¿Cómo sabemos si nuestro servidor es accesible desde Internet? 
 
 ---
+
+<span style="color:blue">some *blue* text <span>
 
 
 
