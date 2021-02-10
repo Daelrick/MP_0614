@@ -86,9 +86,31 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 ---
 
+**nslookup** es una herramienta de línea de comandos, cuya función básica es encontrar la dirección IP de un equipo determinado o realizar una búsqueda DNS inversa (es decir, encontrar el nombre de dominio de una determinada dirección IP).
 
+Para usar el comando, en este caso preguntamos quien es ***es.wikipedia.org***
 
+```powershell
+nslookup es.wikipedia.org
+```
 
+![Quien es](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/nGrV77ywtW.jpg?raw=true)
+
+Ahora podemos preguntarle quien es ***2620:0:862:ed1a::1***
+
+```powershell
+nslookup 2620:0:862:ed1a::1
+```
+
+![Quien es](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/CYjJDxUmgM.jpg?raw=true)
+
+Vemos que aparecen diferentes datos en ambas respuestas
+
+- **Servidor**: nos indica el nombre del servidor DNS que va a utilizar la herramienta para realizar las consultas.
+- **Address**: la dirección IP del DNS que estamos utilizando.
+- **Respuesta no autoritativa**: la respuesta DNS se ha producido desde un servidor DNS que tiene en caché una copia de las consultas realizadas
+- **Nombre**: indica el nombre del dominio que estamos buscando
+- **Address**: las direcciones que corresponden a ese dominio.
 
 
 
