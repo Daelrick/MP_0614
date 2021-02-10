@@ -82,6 +82,14 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 
 
+## ¿Cómo sabemos a quién pertenece una dirección web (URL)?
+
+---
+
+
+
+
+
 
 
 
