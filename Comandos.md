@@ -42,9 +42,11 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 1. En la consola **PowerShell** escribimos la siguiente sintaxis y pulsamos Enter:
 
-   *ping (sitio web)*
+   ```powershell
+   ping www.institutotecnologico.telefonica.com
+   ```
 
-   ***Ejemplo:*** *ping www.institutotecnologico.telefonica.com*
+   
 
 2. Al ejecutar este comando serán enviados una serie de paquetes hacia el sitio web de destino y obtendremos respuesta de recibidos con los respectivos tiempos de envío.
 
@@ -60,7 +62,13 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 ### Opción 2
 
-1. Ingresamos el comando **IPCONFIG**
+1. Ingresamos el siguiente comando:
+
+   ```powershell
+   IPCONFIG
+   ```
+
+   
 
 2. Al ejecutar este comando se mostrará el adaptador activo que tengamos, indicándonos que estamos conectados a Internet
 
@@ -78,7 +86,47 @@ Para realizar la actividad, en primer lugar debemos acceder a la consola PowerSh
 
 ---
 
+Este comando es una herramienta para poder determinar nuestras conexiones tanto internas (localhost) como externas.
 
+En este caso usaremos la siguiente sintaxis
+
+```powershell
+netstat -ano
+```
+
+*Nos mostraría* ***todas*** *las conexiones  en formato numérico y agregaría el número de ID del proceso que está ejecutándose en ese puerto*
+
+![Respuesta](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\JGlaPlVVws.jpg)
+
+
+
+- **Proto**: protocolo establecido para establecer la comunicación. Aquí fundamentalmente veremos tres tipos de protocolos: ICMP, UDP y TCP
+
+- **Dirección Local**: aquí nos aparece el número de IP local que establece una comunicación de salida
+
+- **Dirección remota**: vemos la dirección IP remota a la que estamos conectados, y vemos también que aparece la dirección correspondiente a localhost, es decir a nuestro propio equipo
+
+- **Estado**: nos indica en que estado se encuentra la comunicación entre procesos, y veremos diferentes tipos
+
+*LISTENING,* o escuchando, significa que detrás de ese puerto hay un proceso esperando que alguien hable con él, es decir, en disposición de aceptar comunicaciones. 
+
+*ESTABLISHED,* o establecidas, significa que el proceso que está detrás de ese puerto ya está hablando con algo o alguien; la columna de dirección remota nos indica con quién habla. 
+
+*SYN_SEND*, indica una solicitud de comunicación por nuestra parte, es decir, es como si estuviéramos llamando a alguien y esperando a que nos respondiera.
+
+*SYN_RECEIVED*, indica que el servidor remoto ha aceptado nuestra solicitud de comunicación. Al que estábamos llamando por móvil ya nos ha descolgado, pero todavía no nos ha dicho nada.
+
+*FIN_WAIT_1*, indica que hemos solicitado terminar la comunicación. A nuestro amigo el del móvil, le hemos dicho que vamos a colgar.
+
+*FIN_WAIT_2,* no es muy habitual ver este estado en nuestra comunicaciones, entramos en él cuando hemos solicitado terminar la comunicación pero el servidor no se da por enterado.
+
+*TIMED_WAIT*, estamos esperando a que el servidor acepte nuestra petición de cerrar comunicación. Nuestro amigo el del móvil, nos ha dicho que nos esperemos un momento antes de colgar.
+
+*CLOSE_WAIT*, indica una solicitud de cierre pasiva entre cliente y servidor. Siguiendo con nuestro amigo el del móvil, digamos que aceptamos esperar hasta terminar la comunicación y le decimos que la cierre él cuando quiera, que nosotros dejamos el móvil encendido y nos vamos a hacer otras cosas.
+
+*LAST_ACK,* aquí es nuestro amigo el del móvil el que nos dice que nos cuelga, es decir es el servidor el que nos dice que va a cerrar la comunicación.
+
+*CLOSED*, comunicación entre cliente y servidor cerrada.
 
 
 
@@ -114,7 +162,35 @@ Vemos que aparecen diferentes datos en ambas respuestas
 
 
 
+## ¿Cómo probamos que podemos acceder a un servidor? 
 
+---
 
+El comando **Curl** está diseñado para funcionar como una forma de verificar la conectividad a las URL y como una gran herramienta para transferir datos.
 
+Podemos verificar que la solicitud que realizamos tiene éxito ***(código de respuesta de estado satisfactorio HTTP 200 OK)***
+
+### Opción 1
+
+Para ello podemos tener una URL de una imagen de Github y realizar la siguiente sintaxis:
+
+```powershell
+curl https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/pPJ8TvwdRh.jpg?raw=true
+```
+
+Si pulsamos ***ENTER*** deberemos obtener una respuesta 200 y quiere decir que alcanzamos al servidor
+
+![Statuscode 200](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\Tfsrtpk9xJ.jpg)
+
+### Opción 2
+
+Por otro lado, también podemos descargar la imagen indicada anteriormente para ver si tenemos acceso al servidor. Podemos hacerlo de la siguiente forma:
+
+```powershell
+curl https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/pPJ8TvwdRh.jpg?raw=true -o prueba_descarga.jpg
+```
+
+Si pulsamos ***ENTER*** la imagen se descargará en el directorio en el que nos encontremos
+
+![Descarga de imagen](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\eFZJT9dleR.jpg)
 
