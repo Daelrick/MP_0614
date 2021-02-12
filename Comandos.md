@@ -96,7 +96,7 @@ netstat -ano
 
 *Nos mostraría* ***todas*** *las conexiones  en formato numérico y agregaría el número de ID del proceso que está ejecutándose en ese puerto*
 
-![Respuesta](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\JGlaPlVVws.jpg)
+![Respuesta](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/JGlaPlVVws.jpg?raw=true)
 
 
 
@@ -180,7 +180,7 @@ curl https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/pPJ8TvwdRh.
 
 Si pulsamos ***ENTER*** deberemos obtener una respuesta 200 y quiere decir que alcanzamos al servidor
 
-![Statuscode 200](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\Tfsrtpk9xJ.jpg)
+![Statuscode 200](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/Tfsrtpk9xJ.jpg?raw=true)
 
 ### Opción 2
 
@@ -192,5 +192,7 @@ curl https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/pPJ8TvwdRh.
 
 Si pulsamos ***ENTER*** la imagen se descargará en el directorio en el que nos encontremos
 
-![Descarga de imagen](C:\Users\daelr\OneDrive\Documentos\GitHub\Daelrick\MP_0614\images\PowerShell\eFZJT9dleR.jpg)
+![Descarga de imagen](https://github.com/Daelrick/MP_0614/blob/main/images/PowerShell/eFZJT9dleR.jpg?raw=true)
+
+
 
